@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://help.everlance.com/hc/en-us/articles/45326074722203-Managing-Data-with-APIs
+docs: https://help.everlance.com/hc/en-us/sections/38201888806157-Everlance-Business-API
+summary:
+  types:
+  - http
+  http_schemes:
+  - bearer
+  api_key_in: []
+  oauth2_flows: []
+  access_model: gated
+  provisioning: 'Access tokens are issued by the Everlance team on request. Ask your
+    Everlance account manager or email support@everlance.com to obtain an API access
+    token.'
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  description: 'Everlance Business API requires an access_token passed in the Authorization
+    header as: "Authorization: Bearer access_token". The token is provisioned by the
+    Everlance team (not self-service). Static long-lived bearer token — no OAuth2 flow
+    or scope surface is documented.'
+  in: header
+  header: Authorization
+  format: 'Bearer {access_token}'
+  sources:
+  - docs
