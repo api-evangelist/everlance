@@ -1,0 +1,45 @@
+generated: '2026-07-19'
+method: searched
+source: https://help.everlance.com/hc/en-us/articles/45326074722203-Managing-Data-with-APIs
+docs: https://help.everlance.com/hc/en-us/sections/38201888806157-Everlance-Business-API
+api: Everlance Business API
+summary: >-
+  Cross-cutting conventions for the Everlance Business API, captured from the public
+  help center. The API is a gated, enterprise, uni-directional data-transfer surface
+  (data flows into Everlance) for keeping user, team, and place records in sync. Only
+  the authentication contract is publicly documented; idempotency, pagination, versioning,
+  and error-envelope semantics are not published on the public surface.
+authentication:
+  style: bearer-token
+  header: 'Authorization: Bearer {access_token}'
+  provisioning: gated — token issued by the Everlance team on request
+  ref: authentication/everlance-authentication.yml
+data_direction: uni-directional (into Everlance)
+managed_resources:
+- user_profiles
+- user_attributes
+- team_structure_and_roles
+- favorite_places
+idempotency:
+  documented: false
+  note: No idempotency-key header or contract is documented on the public surface.
+pagination:
+  documented: false
+field_expansion:
+  documented: false
+metadata:
+  documented: false
+request_tracing:
+  documented: false
+versioning:
+  documented: false
+error_envelope:
+  documented: false
+rate_limiting:
+  documented: false
+related:
+- artifact: authentication/everlance-authentication.yml
+notes: >-
+  Everlance also offers an HR Integration (powered by Merge) that syncs employee
+  profiles from 100+ HRIS systems (ADP, UKG, Workday) into the Everlance dashboard;
+  that is a managed no-code integration rather than a direct developer API surface.

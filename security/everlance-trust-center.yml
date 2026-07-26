@@ -1,0 +1,17 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://trust.motus.com/
+url: https://trust.motus.com/
+note: trust.everlance.com redirects to trust.motus.com — Everlance was acquired by
+  Motus (Feb 2025); the trust center covers the combined entity.
+parent: motus
+certifications:
+- SOC 2
+- GDPR
+evidence:
+- source: https://trust.motus.com/
+  keywords:
+  - soc 2
+  - trust center
+  - gdpr

@@ -1,8 +1,15 @@
 aid: everlance
 name: Everlance
-description: 'Everlance is a company surfaced as a portfolio company of bessemer-venture-partners, bloomberg-beta
-  and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Everlance is an automatic mileage and expense tracking platform for self-employed
+  professionals, gig workers, contractors, and businesses, building an infrastructure
+  platform for the self-employed. Its apps capture GPS-based mileage automatically, sync
+  bank and credit-card transactions to categorize expenses, surface tax deductions, and
+  generate IRS-compliant reports. For teams and enterprises, Everlance offers a Business
+  API that enables uni-directional data transfer into the platform to keep user profiles,
+  user attributes, team structure and roles, and favorite places up to date, plus an HR
+  integration (powered by Merge) that syncs employee details from 100+ HRIS systems such
+  as ADP, UKG, and Workday. The Business API authenticates with a Bearer access token
+  provisioned by the Everlance team.'
 url: https://raw.githubusercontent.com/api-evangelist/everlance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,18 +18,95 @@ x-backed-by:
 - bloomberg-beta
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://cdn.prod.website-files.com/666b5cd1a0162528c340e07a/68a8a15ad2c773c81f61b18e_Everlance%2C%20automatic%20mileage%20and%20expense%20tracking%20app.png
 tags:
 - Company
 - Consumer
-apis: []
+- Mileage Tracking
+- Expense Management
+- Reimbursement
+- Fleet Management
+- Tax
+- Gig Economy
+- HR Integration
+- Business API
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Everlance Business API
+  description: 'Enterprise data API for uni-directional data transfer into Everlance:
+    create and update user profiles, apply user attributes (team/department/division
+    tags), assign team structure and roles, and manage favorite places. Access is gated
+    — request a Bearer access token from your Everlance account manager or support.'
+  humanURL: https://help.everlance.com/hc/en-us/sections/38201888806157-Everlance-Business-API
+  baseURL: https://api.everlance.com
+  tags:
+  - Business API
+  - Data Sync
+  - User Management
+  - Reimbursement
+  properties:
+  - type: Authentication
+    url: authentication/everlance-authentication.yml
+  - type: Conventions
+    url: conventions/everlance-conventions.yml
+  - type: Documentation
+    url: https://help.everlance.com/hc/en-us/articles/45326074722203-Managing-Data-with-APIs
 common:
+- type: TrustCenter
+  url: security/everlance-trust-center.yml
+- type: Compliance
+  url: https://trust.motus.com/
 - type: Website
   url: https://www.everlance.com/
+- type: DeveloperPortal
+  url: https://help.everlance.com/hc/en-us/sections/38201888806157-Everlance-Business-API
+- type: Documentation
+  url: https://help.everlance.com/hc/en-us/articles/45326074722203-Managing-Data-with-APIs
+- type: Support
+  url: https://help.everlance.com/hc/en-us
+- type: Pricing
+  url: https://www.everlance.com/pricing
+- type: SignUp
+  url: https://dashboard.everlance.com/start
+- type: Login
+  url: https://dashboard.everlance.com/start
+- type: TermsOfService
+  url: https://www.everlance.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.everlance.com/privacy
+- type: Blog
+  url: https://www.everlance.com/blog
+- type: GitHubOrganization
+  url: https://github.com/Everlance
+- type: Authentication
+  url: authentication/everlance-authentication.yml
+- type: Conventions
+  url: conventions/everlance-conventions.yml
+- type: DomainSecurity
+  url: security/everlance-domain-security.yml
+- type: LLMsTxt
+  url: llms/everlance-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

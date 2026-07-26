@@ -1,0 +1,27 @@
+# Everlance
+
+> Everlance is an automatic mileage and expense tracking platform for self-employed professionals, gig workers, contractors, and businesses. Its apps capture GPS-based mileage, sync bank and card transactions to categorize expenses, surface tax deductions, and generate IRS-compliant reports. For teams and enterprises, Everlance offers a gated Business API for uni-directional data transfer into the platform. Everlance was acquired by Motus in February 2025.
+
+## APIs
+
+- [Everlance Business API](https://help.everlance.com/hc/en-us/sections/38201888806157-Everlance-Business-API): Enterprise data API for creating/updating user profiles, applying user attributes, assigning team structure and roles, and managing favorite places. Base URL https://api.everlance.com. Bearer-token auth; access is provisioned by the Everlance team.
+
+## Docs
+
+- [Managing Data with APIs](https://help.everlance.com/hc/en-us/articles/45326074722203-Managing-Data-with-APIs): Business API overview, capabilities, and authentication (Authorization: Bearer access_token).
+- [How to Link Your HR System to Everlance](https://help.everlance.com/hc/en-us/articles/45326551339291-How-to-Link-Your-HR-System-to-Everlance): HR integration (powered by Merge) syncing 100+ HRIS systems.
+- [Everlance Help Center](https://help.everlance.com/hc/en-us): Support and product documentation.
+
+## Artifacts
+
+- [Authentication](https://raw.githubusercontent.com/api-evangelist/everlance/refs/heads/main/authentication/everlance-authentication.yml): Auth profile (http bearer).
+- [Conventions](https://raw.githubusercontent.com/api-evangelist/everlance/refs/heads/main/conventions/everlance-conventions.yml): Cross-cutting API conventions.
+- [Domain Security](https://raw.githubusercontent.com/api-evangelist/everlance/refs/heads/main/security/everlance-domain-security.yml): TLS/HSTS/DNS posture.
+- [Trust Center](https://raw.githubusercontent.com/api-evangelist/everlance/refs/heads/main/security/everlance-trust-center.yml): SOC 2, GDPR (via parent Motus).
+
+## Company
+
+- [Website](https://www.everlance.com/)
+- [Pricing](https://www.everlance.com/pricing)
+- [Blog](https://www.everlance.com/blog)
+- [GitHub](https://github.com/Everlance)
