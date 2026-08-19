@@ -30,7 +30,7 @@ accessModel:
   - authentication
   generated: '2026-07-22'
   method: derived
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 image: https://cdn.prod.website-files.com/666b5cd1a0162528c340e07a/68a8a15ad2c773c81f61b18e_Everlance%2C%20automatic%20mileage%20and%20expense%20tracking%20app.png
